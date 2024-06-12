@@ -11,6 +11,7 @@ const contarVogais = (str) => {
 };
 
 const atualizarResultado = () => {
+  event.preventDefault();
   const inputString = document.getElementById('inputString').value;
   const resultado = contarVogais(inputString);
   document.getElementById('result').innerText = `O número de vogais em '${inputString}' é: ${resultado}`;
